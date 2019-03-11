@@ -7,7 +7,7 @@ I will extend the given example https://github.com/klavinslab/elma/blob/master/e
 
 Project Success
 ---
-When the UV sensor senses and objecct it will turn the red led light on or when the user presses the button it will turn the red led light on. 
+When the UV sensor senses an object it will turn the red led light on or when the user presses the button it will turn the red led light on. 
 When there is no object around it will turn green led light on or when the  user releases the button it will turn the green led light on.
 
 Resources

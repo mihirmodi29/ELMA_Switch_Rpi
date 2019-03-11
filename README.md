@@ -1,5 +1,4 @@
 # ELMA_Switch_Rpi
-===
 
 Elma is an event loop and process manager for embedded and reactive systems. Elma is structured as a C++ library of classes on top of which you build your own C++ project. It keeps track of processes, finite state machines, events, and communication channels, executing them at specified frequencies. Elma was developed as part of the University of Washington's [ECE P 520 course](https://github.com/klavins/ECEP520) on advanced embedded systems programming. More information on how Elma was designed can be found in the links below:
 - [Event loop management](https://github.com/klavins/ECEP520/tree/master/week_6)

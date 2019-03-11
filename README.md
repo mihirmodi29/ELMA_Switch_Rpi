@@ -5,7 +5,7 @@ Project Goals
 The goal of project is to implement a switching of light on and off using a UV sensor or switch button and Raspberry Pi. This project is extention of ELMA: https://github.com/klavinslab/elma. 
 I will extend the given example https://github.com/klavinslab/elma/blob/master/examples/toggle-switch.cc to Rapberry Pi.
 
-Prject Success
+Project Success
 ---
 When the UV sensor senses and objecct it will turn the red led light on or when the user presses the button it will turn the red led light on. 
 When there is no object around it will turn green led light on or when the  user releases the button it will turn the green led light on.

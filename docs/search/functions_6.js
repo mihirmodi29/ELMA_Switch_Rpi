@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get',['get',['../classelma_1_1Client.html#a6ff6393c0340293b95deb3e467e13d88',1,'elma::Client']]]
+  ['update',['update',['../classtoggle__switch__example_1_1Trigger.html#a38791323511c0174cfe4519dacd9ccf0',1,'toggle_switch_example::Trigger']]]
 ];

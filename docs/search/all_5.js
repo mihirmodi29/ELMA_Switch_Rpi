@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['feedback_2ecc',['feedback.cc',['../feedback_8cc.html',1,'']]],
-  ['flush',['flush',['../classelma_1_1Channel.html#ad88b1d47f43aff5f332418cc58ded617',1,'elma::Channel']]]
+  ['toggle_2dswitch_2ecc',['toggle-switch.cc',['../toggle-switch_8cc.html',1,'']]],
+  ['trigger',['Trigger',['../classtoggle__switch__example_1_1Trigger.html',1,'toggle_switch_example::Trigger'],['../classtoggle__switch__example_1_1Trigger.html#aef67dcb2a022bffdbc75eb7905fb286c',1,'toggle_switch_example::Trigger::Trigger()']]]
 ];

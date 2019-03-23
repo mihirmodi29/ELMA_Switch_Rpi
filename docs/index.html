@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Elma Project: ELMA_Switch_Rpi</title>
+<title>My Elma Project: Final Project</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,10 +60,15 @@ $(function() {
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ELMA_Switch_Rpi </div>  </div>
+<div class="title">Final Project </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Project Goals </h2>
+<div class="textblock"><p>I have developed 2 projects:</p><ul>
+<li><a href="https://github.com/mihirmodi29/vending-machine">Vending Machine</a></li>
+<li><a href="https://github.com/mihirmodi29/ELMA_Switch_Rpi">ELMA_Switch_Rpi</a></li>
+</ul>
+<h1>ELMA_Switch_Rpi (ELMA Project)</h1>
+<h2>Project Goals </h2>
 <p>The goal of project is to implement a switching of light on and off using a UV sensor or switch button and Raspberry Pi. This project is extention of ELMA: <a href="https://github.com/klavinslab/elma">https://github.com/klavinslab/elma</a>. I will extend the given example <a href="https://github.com/klavinslab/elma/blob/master/examples/toggle-switch.cc">https://github.com/klavinslab/elma/blob/master/examples/toggle-switch.cc</a> to Rapberry Pi.</p>
 <h2>Project Success </h2>
 <p>When the UV sensor senses an object it will turn the red led light on or when the user presses the button it will turn the red led light on. When there is no object around it will turn green led light on or when the user releases the button it will turn the green led light on.</p>
@@ -83,12 +88,65 @@ $(function() {
 <li>Gathering sensors and LED's. (3/15/2019)</li>
 <li>Prototype phase 1 and run initial code to ensure Rpi is setup. (3/18/2019)</li>
 <li>Final setup and final code with sensor implementation. (3/20/2019)</li>
-<li>Documentation and final submission. (3/22/2019) </li>
+<li>Documentation and final submission. (3/22/2019)</li>
 </ul>
+<h1>Change of Plans</h1>
+<ul>
+<li>Setting up Raspberry pi 3. (3/12/2019)</li>
+<li>Setting up ELMA into Raspberry pi 3. (3/13/2019)</li>
+<li>Gathering sensors and LED's. (3/14/2019)</li>
+<li>Prototype phase 1 and run initial code to ensure Rpi is setup. (3/15/2019)</li>
+<li>Final setup and final code with led implementation. (3/16/2019)</li>
+<li>Due to unavailibility of UV sensor developed another project <a href="https://github.com/mihirmodi29/vending-machine">Vending Machine</a></li>
+<li>Implemented vending machine and refactoring elma-project (3/21/2019)</li>
+<li>Documentation and final submission. (3/23/2019)</li>
+</ul>
+<h2>Progress Report (3/17/2019) </h2>
+<ul>
+<li>I have setup my Raspberry pi with Raspbian OS. I have also used ELMA as library (<a href="https://github.com/klavinslab/elma">https://github.com/klavinslab/elma</a>) into my project from an example (<a href="https://github.com/klavinslab/elma_project">https://github.com/klavinslab/elma_project</a>). I have also gathered UV sensor along with LED's and developed starter code to blink LED's on and off. Currently I can blink LED on/off using WiringPi library. Next step is to set UV sensor and change state of LED depending on UV sensor output.</li>
+</ul>
+<h2>Progress Report (3/23/2019) </h2>
+<ul>
+<li>Due to limitation of implementing UV sensor I implemented blinking of led in raspberry pi and vending machine impleemntation as another project.</li>
+</ul>
+<h1>Installation </h1>
+<p>The source code for Elma <a href="https://github.com/klavinslab/elma">is on Github</a>.</p>
+<p>First install required packages available through apt-get </p><pre class="fragment">sudo apt-get update
+sudo apt-get install -y cmake
+sudo apt-get install -y cppcheck
+sudo apt-get install -y graphviz
+sudo apt-get install -y doxygen
+sudo apt-get install -y cmake
+sudo apt-get install -y libssl-dev
+</pre><p>Next, install Google Test </p><pre class="fragment">cd /usr/src
+sudo git clone https://github.com/google/googletest.git
+cd googletest
+sudo mkdir install
+cd install
+sudo cmake ../
+sudo make
+sudo make install
+</pre><p>Next, install the json library </p><pre class="fragment">sudo mkdir /usr/local/include/json
+cd /usr/local/include/json
+sudo curl -O -J -L https://github.com/nlohmann/json/releases/download/v3.5.0/json.hpp
+sudo mv json.hpp json.h
+</pre><p>Next, install httplib </p><pre class="fragment">cd /tmp
+git clone https://github.com/klavins/cpp-httplib.git
+sudo mkdir /usr/local/include/httplib
+sudo mv /tmp/cpp-httplib/httplib.h /usr/local/include/httplib
+</pre><p>Now you should be ready to install elma: </p><pre class="fragment">cd ~
+mkdir Code
+cd Code
+git clone https://github.com/klavinslab/elma.git
+cd elma
+make
+</pre><p>Note that the Makefile should detect if you are on a pi by using the command </p><pre class="fragment">uname -m
+</pre><h1>License </h1>
+<p>This software is open source and uses the MIT license. Details can be found <a href="https://github.com/mihirmodi29/ELMA_Switch_Rpi">here</a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2019 21:44:33 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 23 2019 14:32:06 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

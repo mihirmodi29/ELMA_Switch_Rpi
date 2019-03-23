@@ -52,7 +52,7 @@ namespace toggle_switch_example {
 			}
 			else
 			{
-				digitalWrite (LED, HIGH) ;	// Off
+				digitalWrite (LED, HIGH) ;	// On
 			}
         }
 

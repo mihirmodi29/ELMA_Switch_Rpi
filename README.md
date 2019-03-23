@@ -105,7 +105,20 @@ Now you should be ready to install elma:
 Note that the Makefile should detect if you are on a pi by using the command
 
     uname -m
-    
+which on a pi 3 model B+ returns 'armv71'. If your pi is different, you might need to change the ifeq statments in `test/Makefile` and `examples/Makefile`.
+
+If you would like to treat elma as a library, so you can link in other code, you should link to the relevant files in to the unversal system resources (usr) as follows:
+```bash
+ln -s include /usr/local/include/elma
+ln -s lib/libelma.a /usr/local/lib/libelma.a
+```
+Then you can do 
+```c++
+#include "/home/pi/Desktop/Code/elma/include/elma.h" 
+```
+in your code and use the `-lelma` flag while linking. See the [example elma project](https://github.com/klavinslab/elma_project) for an example.
+
+
 License
 ===
 This software is open source and uses the MIT license. Details can be found [here](https://github.com/mihirmodi29/ELMA_Switch_Rpi).

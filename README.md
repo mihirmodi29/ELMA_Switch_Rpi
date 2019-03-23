@@ -125,6 +125,12 @@ Now you should be ready to install ELMA_Switch_Rpi:
     git clone https://github.com/mihirmodi29/ELMA_Switch_Rpi
     cd ELMA_Switch_Rpi
     make
+    
+Execution
+---
+To run the ELMA_Switch_Rpi, type
+
+    bin/toggle-switch
 
 License
 ===

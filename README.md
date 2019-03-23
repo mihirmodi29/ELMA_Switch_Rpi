@@ -1,4 +1,10 @@
-# ELMA_Switch_Rpi
+Final Project
+---
+I have developed 2 projects:
+- [Vending Machine](https://github.com/mihirmodi29/vending-machine)
+- [ELMA_Switch_Rpi](https://github.com/mihirmodi29/ELMA_Switch_Rpi)
+
+# ELMA_Switch_Rpi (ELMA Project)
 
 Project Goals
 ---

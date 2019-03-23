@@ -57,7 +57,7 @@ namespace toggle_switch_example {
         }
 
         //! Do nothing while the state is active
-        void during() {std::cout << "checking "<< "\n";}
+        void during() {}
 
         //! Do nothing upon exiting the state        
         void exit(const Event&) {}

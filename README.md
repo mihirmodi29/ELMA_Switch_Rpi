@@ -118,6 +118,13 @@ Then you can do
 ```
 in your code and use the `-lelma` flag while linking. See the [example elma project](https://github.com/klavinslab/elma_project) for an example.
 
+Now you should be ready to install ELMA_Switch_Rpi:
+
+    cd Desktop
+    cd Code
+    git clone https://github.com/mihirmodi29/ELMA_Switch_Rpi
+    cd ELMA_Switch_Rpi
+    make
 
 License
 ===

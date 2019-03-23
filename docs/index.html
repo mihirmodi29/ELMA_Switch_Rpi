@@ -134,19 +134,46 @@ sudo mv json.hpp json.h
 git clone https://github.com/klavins/cpp-httplib.git
 sudo mkdir /usr/local/include/httplib
 sudo mv /tmp/cpp-httplib/httplib.h /usr/local/include/httplib
-</pre><p>Now you should be ready to install elma: </p><pre class="fragment">cd ~
+</pre><p>Now you should be ready to install elma: </p><pre class="fragment">cd Desktop
 mkdir Code
 cd Code
 git clone https://github.com/klavinslab/elma.git
 cd elma
 make
 </pre><p>Note that the Makefile should detect if you are on a pi by using the command </p><pre class="fragment">uname -m
-</pre><h1>License </h1>
+</pre><p> which on a pi 3 model B+ returns 'armv71'. If your pi is different, you might need to change the ifeq statments in <code>test/Makefile</code> and <code>examples/Makefile</code>.</p>
+<p>If you would like to treat elma as a library, so you can link in other code, you should link to the relevant files in to the unversal system resources (usr) as follows: </p><div class="fragment"><div class="line">ln -s include /usr/local/include/elma</div><div class="line">ln -s lib/libelma.a /usr/local/lib/libelma.a</div></div><!-- fragment --><p> Then you can do </p><div class="fragment"><div class="line">{c++}</div><div class="line">#include &quot;/home/pi/Desktop/Code/elma/include/elma.h&quot; </div></div><!-- fragment --><p> in your code and use the <code>-lelma</code> flag while linking. See the <a href="https://github.com/klavinslab/elma_project">example elma project</a> for an example.</p>
+<p>Now you should be ready to install ELMA_Switch_Rpi: </p><pre class="fragment">cd Desktop
+cd Code
+git clone https://github.com/mihirmodi29/ELMA_Switch_Rpi
+cd ELMA_Switch_Rpi
+make
+</pre><h2>Architecture </h2>
+<p>Connect LED as follow to pin 11:</p>
+<div class="image">
+<img src="image/blink1.jpg"/>
+</div>
+<h2>Execution </h2>
+<p>To run the ELMA_Switch_Rpi, type </p><pre class="fragment">bin/toggle-switch
+</pre><h2>Result </h2>
+<div class="image">
+<img src="image/result.PNG"/>
+</div>
+<h2>Acknowledgements </h2>
+<p>I would like to thank Prof. Klavins for the awesome coursework material.</p>
+<h2>References </h2>
+<ul>
+<li><a href="https://github.com/klavinslab/elma_project">https://github.com/klavinslab/elma_project</a></li>
+<li><a href="https://github.com/klavins/ECEP520">https://github.com/klavins/ECEP520</a></li>
+<li><a href="https://github.com/klavinslab/elma/blob/master/examples/toggle-switch.cc">https://github.com/klavinslab/elma/blob/master/examples/toggle-switch.cc</a></li>
+<li><a href="http://wiringpi.com/examples/blink/">http://wiringpi.com/examples/blink/</a></li>
+</ul>
+<h1>License </h1>
 <p>This software is open source and uses the MIT license. Details can be found <a href="https://github.com/mihirmodi29/ELMA_Switch_Rpi">here</a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 23 2019 14:32:06 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 23 2019 15:13:59 for My Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

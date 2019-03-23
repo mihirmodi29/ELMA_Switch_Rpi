@@ -1,6 +1,6 @@
 #include <iostream>
 #include <chrono>
-#include "/home/pi/Code/elma/include/elma.h" // Note installation directory for elma
+#include "/home/pi/Desktop/Code/elma/include/elma.h" // Note installation directory for elma
 #include <wiringPi.h>
 
 //! \file

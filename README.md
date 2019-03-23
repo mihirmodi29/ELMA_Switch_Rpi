@@ -129,6 +129,7 @@ Now you should be ready to install ELMA_Switch_Rpi:
 Architecture
 ---
 Connect LED as follow to pin 11:
+
 ![](image/blink1.PNG)
     
 Execution

@@ -95,7 +95,7 @@ Next, install httplib
 
 Now you should be ready to install elma:
 
-    cd ~
+    cd Desktop
     mkdir Code
     cd Code
     git clone https://github.com/klavinslab/elma.git

@@ -125,6 +125,11 @@ Now you should be ready to install ELMA_Switch_Rpi:
     git clone https://github.com/mihirmodi29/ELMA_Switch_Rpi
     cd ELMA_Switch_Rpi
     make
+
+Architecture
+---
+Connect LED as follow to pin 11:
+![](image/blink1.PNG)
     
 Execution
 ---
@@ -132,6 +137,24 @@ To run the ELMA_Switch_Rpi, type
 
     bin/toggle-switch
 
+Result 
+---
+
+![](image/result.PNG)
+
+Acknowledgements
+---
+I would like to thank Prof. Klavins for the awesome coursework material. 
+
+References
+---
+- https://github.com/klavinslab/elma_project
+
+- https://github.com/klavins/ECEP520
+
+- https://github.com/klavinslab/elma/blob/master/examples/toggle-switch.cc
+
+- http://wiringpi.com/examples/blink/
 License
 ===
 This software is open source and uses the MIT license. Details can be found [here](https://github.com/mihirmodi29/ELMA_Switch_Rpi).

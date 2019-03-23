@@ -34,6 +34,78 @@ Milestones
 - Final setup and final code with sensor implementation. (3/20/2019)
 - Documentation and final submission. (3/22/2019) 
 
+# Change of Plans
+
+- Setting up Raspberry pi 3. (3/12/2019)
+- Setting up ELMA into Raspberry pi 3. (3/13/2019)
+- Gathering sensors and LED's. (3/14/2019)
+- Prototype phase 1 and run initial code to ensure Rpi is setup. (3/15/2019)
+- Final setup and final code with led implementation. (3/16/2019)
+- Due to unavailibility of UV sensor developed another project [Vending Machine](https://github.com/mihirmodi29/vending-machine)
+- Implemented vending machine and refactoring elma-project (3/21/2019)
+- Documentation and final submission. (3/23/2019) 
+
 Progress Report (3/17/2019)
 ---
 - I have setup my Raspberry pi with Raspbian OS. I have also used ELMA as library (https://github.com/klavinslab/elma) into my project from an example (https://github.com/klavinslab/elma_project). I have also gathered UV sensor along with LED's and developed starter code to blink LED's on and off. Currently I can blink LED on/off using WiringPi library. Next step is to set UV sensor and change state of LED depending on UV sensor output.  
+
+Progress Report (3/23/2019)
+---
+- Due to limitation of implementing UV sensor I implemented blinking of led in raspberry pi and vending machine impleemntation as another project.
+
+Installation
+===
+
+The source code for Elma [is on Github](https://github.com/klavinslab/elma).
+
+First install required packages available through apt-get
+
+    sudo apt-get update
+    sudo apt-get install -y cmake
+    sudo apt-get install -y cppcheck
+    sudo apt-get install -y graphviz
+    sudo apt-get install -y doxygen
+    sudo apt-get install -y cmake
+    sudo apt-get install -y libssl-dev
+
+Next, install Google Test
+
+    cd /usr/src
+    sudo git clone https://github.com/google/googletest.git
+    cd googletest
+    sudo mkdir install
+    cd install
+    sudo cmake ../
+    sudo make
+    sudo make install
+
+Next, install the json library
+
+    sudo mkdir /usr/local/include/json
+    cd /usr/local/include/json
+    sudo curl -O -J -L https://github.com/nlohmann/json/releases/download/v3.5.0/json.hpp
+    sudo mv json.hpp json.h
+
+Next, install httplib
+
+    cd /tmp
+    git clone https://github.com/klavins/cpp-httplib.git
+    sudo mkdir /usr/local/include/httplib
+    sudo mv /tmp/cpp-httplib/httplib.h /usr/local/include/httplib
+
+Now you should be ready to install elma:
+
+    cd ~
+    mkdir Code
+    cd Code
+    git clone https://github.com/klavinslab/elma.git
+    cd elma
+    make
+
+Note that the Makefile should detect if you are on a pi by using the command
+
+    uname -m
+    
+License
+===
+This software is open source and uses the MIT license. Details can be found [here](https://github.com/mihirmodi29/ELMA_Switch_Rpi).
